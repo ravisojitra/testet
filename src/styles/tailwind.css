@@ -1,0 +1,323 @@
+
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #4d44b5;
+}
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='search']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0px;
+}
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline:none !important;
+  outline-offset: 0 !important;
+  --tw-ring-offset-width:none !important;
+}
+
+li:focus-visible{
+  outline: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }
+@keyframes tabPanel { from { opacity: 0; } to { opacity: 1; } }
+/* Input style */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  position: absolute;
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container input {
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.Dashboard{
+ @apply font-medium lg:ml-[15px] xl:ml-[19px] 2xl:ml-[21px] 3xl:ml-[26px] text-indigo_100 w-[auto]; 
+}
+.Vector{
+ @apply lg:h-[18px] xl:h-[23px] 2xl:h-[25px] 3xl:h-[30px] w-[11%]; 
+}
+.students{
+ @apply font-medium lg:ml-[15px] xl:ml-[19px] 2xl:ml-[21px] 3xl:ml-[26px] text-indigo_500 w-[auto]; 
+}
+.Vector2{
+ @apply lg:h-[20px] xl:h-[25px] 2xl:h-[28px] 3xl:h-[34px] w-[21%]; 
+}
+.event{
+ @apply font-medium lg:ml-[16px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] my-[0] text-indigo_100 w-[auto]; 
+}
+.Vector3{
+ @apply lg:h-[15px] xl:h-[19px] 2xl:h-[21px] 3xl:h-[25px] lg:w-[14px] xl:w-[18px] 2xl:w-[20px] 3xl:w-[24px]; 
+}
+.finance{
+ @apply font-medium lg:ml-[12px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[21px] text-indigo_100 w-[auto]; 
+}
+.Finance{
+ @apply lg:h-[22px] xl:h-[27px] 2xl:h-[31px] 3xl:h-[37px] lg:w-[21px] xl:w-[26px] 2xl:w-[30px] 3xl:w-[36px]; 
+}
+.food{
+ @apply font-medium lg:ml-[16px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] text-indigo_100 w-[auto]; 
+}
+.Vector4{
+ @apply lg:h-[18px] xl:h-[23px] 2xl:h-[25px] 3xl:h-[30px] w-[25%]; 
+}
+.Vector5{
+ @apply lg:h-[20px] xl:h-[25px] 2xl:h-[28px] 3xl:h-[33px] w-[29%]; 
+}
+.Chat{
+ @apply font-medium lg:ml-[13px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[22px] text-indigo_100 w-[auto]; 
+}
+.Vector6{
+ @apply lg:h-[18px] xl:h-[23px] 2xl:h-[25px] 3xl:h-[30px] w-[34%]; 
+}
+.Activity{
+ @apply font-medium lg:ml-[14px] xl:ml-[18px] 2xl:ml-[20px] 3xl:ml-[24px] text-indigo_100 w-[auto]; 
+}
+.Vector7{
+ @apply lg:h-[14px] xl:h-[18px] 2xl:h-[20px] 3xl:h-[24px] my-[0] w-[17%]; 
+}
+.SamantaWilliam{
+ @apply font-bold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] text-indigo_900 w-[auto]; 
+}
+.March252021{
+ @apply font-normal not-italic text-gray_500 w-[auto]; 
+}
+.ManaWilliam{
+ @apply font-normal lg:ml-[47px] xl:ml-[59px] 2xl:ml-[66px] 3xl:ml-[80px] not-italic text-indigo_900 w-[auto]; 
+}
+.contact{
+ @apply lg:h-[22px] xl:h-[27px] 2xl:h-[31px] 3xl:h-[37px] lg:ml-[46px] xl:ml-[58px] 2xl:ml-[66px] 3xl:ml-[79px] w-[12%]; 
+}
+.Vector8{
+ @apply lg:h-[3px] 2xl:h-[4px] xl:h-[4px] 3xl:h-[5px] lg:ml-[41px] xl:ml-[51px] 2xl:ml-[57px] 3xl:ml-[69px] w-[1%]; 
+}
+.March2520211{
+ @apply font-normal lg:ml-[34px] xl:ml-[42px] 2xl:ml-[48px] 3xl:ml-[57px] not-italic text-gray_500 w-[auto]; 
+}
+.Group54{
+ @apply font-normal not-italic text-indigo_900 w-[auto]; 
+}
+.contact1{
+ @apply lg:h-[22px] xl:h-[27px] 2xl:h-[31px] 3xl:h-[37px] lg:ml-[46px] xl:ml-[58px] 2xl:ml-[66px] 3xl:ml-[79px] w-[24%]; 
+}
+.Vector9{
+ @apply lg:h-[3px] 2xl:h-[4px] xl:h-[4px] 3xl:h-[5px] lg:ml-[41px] xl:ml-[51px] 2xl:ml-[57px] 3xl:ml-[69px] w-[2%]; 
+}
+.Vector11{
+ @apply lg:h-[11px] xl:h-[14px] 2xl:h-[16px] 3xl:h-[19px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[22px] w-[1%]; 
+}
+.title3{
+ @apply font-semibold lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] text-indigo_900 w-[auto]; 
+}
+.test_1234567890{
+ @apply font-semibold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] text-indigo_900 w-[auto]; 
+}
+.Thursday10th{
+ @apply font-normal lg:mt-[4px] xl:mt-[5px] 2xl:mt-[6px] 3xl:mt-[7px] not-italic text-gray_500 w-[auto]; 
+}
+.Group82{
+ @apply bg-white_A700 items-center 3xl:my-[10px] lg:my-[6px] xl:my-[8px] 2xl:my-[9px] rounded-radius20 w-[100%]; 
+}
+.ClassVIIB{
+ @apply font-normal lg:mt-[2px] 2xl:mt-[3px] xl:mt-[3px] 3xl:mt-[4px] not-italic text-gray_500 w-[auto]; 
+}
+.Date1{
+ @apply font-normal lg:ml-[10px] xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[17px] not-italic text-gray_500 w-[auto]; 
+}
+.Vector12{
+ @apply xl:h-[11px] 2xl:h-[13px] 3xl:h-[15px] lg:h-[9px] xl:w-[10px] 2xl:w-[12px] 3xl:w-[14px] lg:w-[8px]; 
+}
+.Hours{
+ @apply font-normal xl:ml-[12px] 2xl:ml-[13px] 3xl:ml-[16px] lg:ml-[9px] not-italic text-gray_500 w-[auto]; 
+}
+.test_32{
+ @apply lg:h-[11px] xl:h-[14px] 2xl:h-[16px] 3xl:h-[19px] my-[0] lg:w-[10px] xl:w-[13px] 2xl:w-[15px] 3xl:w-[18px]; 
+}
+.Group134{
+ @apply items-start justify-between xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] lg:my-[8px] w-[100%]; 
+}
+.test_49{
+ @apply lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] text-indigo_900 w-[auto]; 
+}
+.Arrow1{
+ @apply lg:h-[18px] xl:h-[23px] 2xl:h-[25px] 3xl:h-[30px] lg:ml-[44px] xl:ml-[56px] 2xl:ml-[63px] 3xl:ml-[75px] lg:w-[17px] xl:w-[22px] 2xl:w-[24px] 3xl:w-[29px]; 
+}
+.test_50{
+ @apply absolute font-semibold h-[max-content] inset-[0] justify-center m-[auto] text-indigo_900 w-[max-content]; 
+}
+.Vector13{
+ @apply lg:h-[3px] 2xl:h-[4px] xl:h-[4px] 3xl:h-[5px] w-[7%]; 
+}
+.Group181{
+ @apply items-center 3xl:my-[10px] lg:my-[6px] xl:my-[8px] 2xl:my-[9px] w-[100%]; 
+}
+.test_2March20211{
+ @apply font-normal 2xl:ml-[105px] 3xl:ml-[126px] lg:ml-[74px] xl:ml-[93px] not-italic text-gray_500 w-[auto]; 
+}
+.test_50036{
+ @apply font-semibold xl:ml-[107px] 2xl:ml-[120px] 3xl:ml-[144px] lg:ml-[85px] text-indigo_900 w-[auto]; 
+}
+.number{
+ @apply font-normal lg:mt-[17px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] not-italic text-gray_500 w-[auto]; 
+}
+.unpaidstudent{
+ @apply lg:ml-[17px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] text-indigo_900 w-[auto]; 
+}
+.Group239{
+ @apply bg-white_A700 items-center my-[0] lg:pl-[17px] xl:pl-[21px] 2xl:pl-[24px] 3xl:pl-[28px] lg:py-[14px] xl:py-[18px] 2xl:py-[21px] 3xl:py-[25px] w-[100%]; 
+}
+.SamanthaWillia{
+ @apply font-semibold lg:ml-[12px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[21px] text-indigo_900 w-[auto]; 
+}
+.date{
+ @apply font-semibold lg:ml-[53px] xl:ml-[66px] 2xl:ml-[75px] 3xl:ml-[90px] text-indigo_900 w-[auto]; 
+}
+.menu{
+ @apply lg:h-[13px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] lg:ml-[48px] xl:ml-[60px] 2xl:ml-[67px] 3xl:ml-[81px] w-[8%]; 
+}
+.title4{
+ @apply font-normal mt-[4px] not-italic text-gray_500 w-[auto]; 
+}
+.Group240{
+ @apply items-center xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] lg:my-[8px] w-[100%]; 
+}
+.test_1245PM{
+ @apply absolute font-normal font-poppins not-italic right-[0] text-gray_500 top-[0] w-[auto]; 
+}
+.test_2{
+ @apply absolute bottom-[0] font-cairo font-normal not-italic right-[10%] text-white_A700 w-[auto]; 
+}
+.BeefSteakwith{
+ @apply font-semibold ml-[1px] lg:mt-[12px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] text-bluegray_800 w-[auto]; 
+}
+.Loremipsumdol1{
+ @apply font-normal ml-[1px] mt-[4px] not-italic text-gray_500 w-[auto]; 
+}
+.form{
+ @apply font-normal not-italic p-[0] 2xl:text-[10px] 3xl:text-[12px] lg:text-[7px] xl:text-[9px] text-gray_500 w-[100%]; 
+}
+.Group16{
+ @apply font-normal leading-[normal] mt-[2px] not-italic text-gray_500 w-[96%]; 
+}
+.Group399{
+ @apply items-center lg:my-[10px] xl:my-[12px] 2xl:my-[14px] 3xl:my-[17px] w-[100%]; 
+}
+.Chat3{
+ @apply font-normal leading-[normal] not-italic text-white_A700 w-[100%]; 
+}
+.Group490{
+ @apply font-normal lg:leading-[17px] xl:leading-[21px] 2xl:leading-[24px] 3xl:leading-[28px] not-italic text-gray_500 w-[100%]; 
+}
+.Quote{
+ @apply lg:h-[13px] xl:h-[17px] 2xl:h-[19px] 3xl:h-[22px] ml-[2px] lg:w-[12px] xl:w-[16px] 2xl:w-[18px] 3xl:w-[21px]; 
+}
+.Group493{
+ @apply font-normal leading-[normal] not-italic text-indigo_900 w-[100%]; 
+}
+.Group468{
+ @apply font-normal mt-[2px] not-italic text-gray_500 w-[auto]; 
+}
+.Mathematics{
+ @apply font-normal lg:mt-[4px] 2xl:mt-[6px] xl:mt-[6px] 3xl:mt-[8px] not-italic text-gray_500 w-[auto]; 
+}
+.button{
+ @apply lg:h-[22px] xl:h-[27px] 2xl:h-[31px] 3xl:h-[37px] 3xl:ml-[108px] lg:ml-[64px] xl:ml-[80px] 2xl:ml-[90px] lg:mt-[17px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] w-[31%]; 
+}
+.MariaHistoria{
+ @apply lg:mt-[12px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] text-indigo_900 w-[auto]; 
+}
+.Group568{
+ @apply items-center justify-between xl:my-[10px] 2xl:my-[12px] 3xl:my-[14px] lg:my-[8px] w-[100%]; 
+}
+.Group650{
+ @apply font-bold leading-[normal] text-indigo_900 w-[100%]; 
+}
+.text1{
+ @apply font-bold mt-[4px] text-indigo_900 w-[auto]; 
+}
+.Vector37{
+ @apply lg:h-[3px] 2xl:h-[4px] xl:h-[4px] 3xl:h-[5px] w-[8%]; 
+}
+.test_500361{
+ @apply font-semibold lg:ml-[37px] xl:ml-[46px] 2xl:ml-[52px] 3xl:ml-[63px] text-indigo_900 w-[auto]; 
+}
+.Complete1{
+ @apply font-semibold lg:ml-[32px] xl:ml-[40px] 2xl:ml-[45px] 3xl:ml-[54px] text-teal_300 w-[auto]; 
+}
+.A{
+ @apply absolute font-poppins inset-x-[21%] text-colors w-[auto]; 
+}
+.Akademi{
+ @apply font-poppins xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] text-colors w-[auto]; 
+}
+.Group87{
+ @apply font-bold font-poppins text-colors w-[auto]; 
+}
+.Madewithby{
+ @apply font-normal font-poppins xl:mt-[10px] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[8px] not-italic text-colors w-[auto]; 
+}
+.Dashboard1{
+ @apply font-medium font-poppins lg:ml-[15px] xl:ml-[19px] 2xl:ml-[21px] 3xl:ml-[26px] text-colors3 w-[auto]; 
+}
+.event2{
+ @apply font-medium font-poppins lg:ml-[16px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] my-[0] text-colors3 w-[auto]; 
+}
+.finance2{
+ @apply font-medium font-poppins lg:ml-[12px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[21px] text-colors3 w-[auto]; 
+}
+.food1{
+ @apply font-medium font-poppins lg:ml-[16px] xl:ml-[20px] 2xl:ml-[22px] 3xl:ml-[27px] text-colors1 w-[auto]; 
+}
+.Chat4{
+ @apply font-medium font-poppins lg:ml-[13px] xl:ml-[16px] 2xl:ml-[18px] 3xl:ml-[22px] text-colors3 w-[auto]; 
+}
+.Activity2{
+ @apply font-medium font-poppins lg:ml-[14px] xl:ml-[18px] 2xl:ml-[20px] 3xl:ml-[24px] text-colors3 w-[auto]; 
+}
+.Name2{
+ @apply font-normal font-poppins mt-[4px] not-italic text-colors2 w-[auto]; 
+}
+.Group152{
+ @apply font-poppins font-semibold text-colors4 w-[auto]; 
+}
+.Dashboard2{
+ @apply font-medium font-poppins lg:ml-[15px] xl:ml-[19px] 2xl:ml-[21px] 3xl:ml-[26px] text-colors1 w-[auto]; 
+}
+.Group253{
+ @apply font-normal font-poppins not-italic text-colors2 w-[auto]; 
+}
