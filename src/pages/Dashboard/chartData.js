@@ -3,28 +3,28 @@ const ChartJsDoughnutData = {
   datasets: [
     {
       label: "Dataset 1",
-      data: [408, 74, 215, 417, 961, 169, 989],
+      data: [490, 968, 404, 136, 173, 534, 660],
       backgroundColor: [
-        "#66ffff",
-        "#d966ff",
-        "#ff99bb",
-        "#66ffff",
+        "#66ff66",
         "#ff4d79",
-        "#ff9933",
         "#ff4d79",
+        "#ff8080",
+        "#4da6ff",
+        "#66ff66",
+        "#66ffff",
       ],
     },
   ],
 };
 export { ChartJsDoughnutData };
 const PieData = [
-  { name: "January", c0: 286 },
-  { name: "February", c0: 467 },
-  { name: "March", c0: 82 },
-  { name: "April", c0: 125 },
-  { name: "May", c0: 714 },
-  { name: "June", c0: 558 },
-  { name: "July", c0: 696 },
+  { name: "January", c0: 329 },
+  { name: "February", c0: 798 },
+  { name: "March", c0: 868 },
+  { name: "April", c0: 152 },
+  { name: "May", c0: 546 },
+  { name: "June", c0: 447 },
+  { name: "July", c0: 674 },
 ];
 export { PieData };
 const COLORS = [
